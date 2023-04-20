@@ -1,0 +1,115 @@
+.button-73 {
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #adcfff 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    margin: auto;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-73:hover {
+    background-color: #ffc229;
+    box-shadow: #ff6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.button-73:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .button-73 {
+        font-size: 1.5rem;
+        padding: 0.75rem 2rem;
+    }
+}
+
+div {
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+.fa-2xl {
+    font-size: 80px;
+    line-height: normal;
+}
+
+.payment-method {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    box-shadow: 5px 5px 5px 5px #888;
+    height: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    /* outline: rgb(39, 39, 39) solid 5px; */
+    transition: all 0.3s;
+}
+.card:hover {
+    box-shadow: 15px 15px 15px 15px #888;
+    transform: scale(1.1, 1.1);
+}
