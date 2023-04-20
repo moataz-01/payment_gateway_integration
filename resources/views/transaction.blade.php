@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Pay USD.100</title>
+    <title>Pay</title>
     <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_SANDBOX_CLIENT_ID') }}"></script>
 </head>
 <body>
-    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD100</a>
+    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD 5</a>
+    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD 10</a>
+    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD 20</a>
+    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD 50</a>
+    <a class="btn btn-primary m-3" href="{{ route('processTransaction') }}">Pay USD 100</a>
     @if(\Session::has('error'))
         <div class="alert alert-danger">{{ \Session::get('error') }}</div>
         {{ \Session::forget('error') }}
